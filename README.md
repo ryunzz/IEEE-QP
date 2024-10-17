@@ -34,3 +34,56 @@ git remote add origin https://github.com/ryunzz/IEEE-QP.git
 git branch -M main
 git push -u origin main
 ```
+
+
+## 2. Working with Feature Branches
+
+### Creating a Feature Branch
+
+When starting a new feature, **always** create a new branch from the latest `main` branch. Follow these steps:
+
+1. **Open the project in VS Code**:
+
+   In your terminal, from the project directory, run:
+
+   ```bash
+   code .
+   ```
+
+2. **Update your local main branch**:
+
+Before creating a new branch, ensure your main branch is up-to-date:
+
+```bash
+git checkout main
+git pull origin main
+```
+
+3. **Create a new feature branch**:
+
+Use the following command to create your feature branch, following the convention feature/feature-name:
+
+```bash
+git checkout -b feature/your-feature-name
+```
+
+4. **Push your new branch to the remote repository:**:
+
+```bash
+git push -u origin feature/your-feature-name
+```
+
+After u pushed ur feature branch, you'll open a pull request (PR) and having it reviewed by someone else on our team. Here's how it works:
+
+1. **Open a Pull Request (PR)**:
+
+   - After pushing your feature branch, go to the repository on GitHub.
+   - You should see a prompt to create a pull request for your branch.
+   - Click "Compare & pull request" and provide a meaningful title and description for your feature.
+   - Be sure to explain what the feature does and highlight any important changes.
+
+2. **Assign Reviewers**:
+
+   - After creating the pull request, assign someone to review it (also u can js say smth in the discord).
+   - Then the reviewer will check check ur code
+   - Lets try to leave comments or request changes to improve the code or fix bugs if applicable
