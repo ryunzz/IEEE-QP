@@ -17,12 +17,12 @@ Start by cloning the repository and navigating to the project directory:
 if u wanna do this using the command line u do;
 
 ```bash
-echo "# PiB-Ultra-Wideband-UWB" >> README.md
+echo "# IEEE-QP" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
 git branch -M main
-git remote add origin https://github.com/jphung101/PiB-Ultra-Wideband-UWB.git
+git remote add origin https://github.com/ryunzz/IEEE-QP.git
 git push -u origin main
 ```
 
@@ -30,7 +30,7 @@ git push -u origin main
 or push an existing repository from the command line;
 
 ```bash
-git remote add origin https://github.com/jphung101/PiB-Ultra-Wideband-UWB.git
+git remote add origin https://github.com/ryunzz/IEEE-QP.git
 git branch -M main
 git push -u origin main
 ```
