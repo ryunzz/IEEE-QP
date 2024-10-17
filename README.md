@@ -4,7 +4,7 @@ This will be our Git Hub repo for our project! If you have any ideas or things t
 
 
 
-U can use this document to learn/remind urself the process for creating and managing feature branches and keeping them in sync with the `main` branch to ensure we dont have lots of merge conflicts.
+U can use this document to learn/remind urself the process for creating and managing feature branches and keeping them in sync with the `main` branch to ensure we dont have hella merge conflicts and issues.
 
 ---
 
