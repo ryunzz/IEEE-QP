@@ -1,4 +1,4 @@
-This is a project that is currently in development. If you're interested in following along with our project, we will be documenting our process on https://www.youtube.com/@ryun-zz !
+This is a project that is currently in development. If you're interested in following along, we will be documenting our process on https://www.youtube.com/@ryun-zz !
 
 ---
 
