@@ -32,7 +32,7 @@ Here are some quick links to some of the resources we developed while creating o
 
 📢 • Pitchdeck (coming soon) Will be created closer to dead line
 
-📕 • Documentation (coming soon) Ryan's working on it ;-;
+📕 • Documentation (coming soon) Ryan Ni's working on it ;-;
 
 # Materials
 - Arduino UNO
