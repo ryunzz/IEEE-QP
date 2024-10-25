@@ -26,9 +26,9 @@
 #define BLYNK_PRINT Serial
 
 /* Fill in information from Blynk Device Info here */
-//#define BLYNK_TEMPLATE_ID           "TMPxxxxxx"
-//#define BLYNK_TEMPLATE_NAME         "Device"
-//#define BLYNK_AUTH_TOKEN            "YourAuthToken"
+#define BLYNK_TEMPLATE_ID           "TMPxxxxxx"
+#define BLYNK_TEMPLATE_NAME         "Device"
+#define BLYNK_AUTH_TOKEN            "YourAuthToken"
 
 
 // Select your modem:
@@ -42,7 +42,7 @@
 
 // Default heartbeat interval for GSM is 60
 // If you want override this value, uncomment and set this option:
-//#define BLYNK_HEARTBEAT 30
+#define BLYNK_HEARTBEAT 30
 
 #include <TinyGsmClient.h>
 #include <BlynkSimpleTinyGSM.h>
