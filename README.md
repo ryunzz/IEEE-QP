@@ -35,6 +35,8 @@ Here are some quick links to some of the resources we developed while creating o
 📕 • Documentation (coming soon) Ryan Ni's working on it ;-;
 
 # Materials
+If you're interested in what materials we used to build Power Tag, here's a list of resources from where we purchased our parts!
+
 - [Arduino UNO](https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/ref=asc_df_B008GRTSV6/?tag=hyprod-20&linkCode=df0&hvadid=693421862574&hvpos=&hvnetw=g&hvrand=6421810398727834100&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9189214&hvtargid=pla-457497319401&psc=1&mcid=8d4415853f19330eb6cb8c1e7f18a8ed)
 - [SIM 800L GSM Module](https://www.amazon.com/HiLetgo-Smallest-Breakout-Quad-band-3-7-4-2V/dp/B01DLIJM2E)
 - [SIM Card w/o provider (from 1NCE)](https://1nce.com/en-us/gps-tracking-sim-cards?utm_term=&utm_campaign=PMax+-+Product&utm_source=adwords&utm_medium=ppc&hsa_acc=4214171268&hsa_cam=21418043752&hsa_grp=&hsa_ad=&hsa_src=x&hsa_tgt=&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=2&gclid=EAIaIQobChMIhMLX7LCciQMVwirUAR3U4jDGEAEYASABEgKelPD_BwE)
