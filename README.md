@@ -26,7 +26,7 @@ We programmed the Arduino UNO to send the GPS coordinates from the SIM 800L GSM 
 # Overview
 Here are some quick links to some of the resources we developed while creating our project:
 
-⚒️ • Prototype (coming soon) Parts are on their way! 
+⚒️ • [CAD Prototype] (https://cad.onshape.com/documents/67d8d90d8b94e67792a9e8eb/w/5cc38d1a1233b62465a13d6b/e/1631b92fce3cd4521551662b) (WIP)
 
 📐 • Figma? (coming soon) We'll see LOL
 
