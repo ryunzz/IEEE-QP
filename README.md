@@ -15,7 +15,7 @@ Power Tag uses GSM communication to send GPS coordinates through a SIM 800L GSM 
 We programmed the Arduino UNO to send the GPS coordinates from the SIM 800L GSM module to our mobile application via Blynk API and display the location of the users' Power Tag on an embedded map via Google Maps API. Designed and soldered hardware components together to complete a circuit to allow for Power Tag's charging feature.
 
 # Challenges we ran into
-(will fill in as problems arise)
+One of the chelleges we faced was designing the circuitry for Power Tag to allow for both Solar charging and general charging via a USB Type C Connector. We solved this by ____. (WIP LOL)
 
 # Accomplishments that we're proud of
 (will fill in after project is done)
