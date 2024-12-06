@@ -18,6 +18,7 @@ import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
+import com.google.android.gms.maps.model.Marker
 import com.google.android.gms.maps.model.MarkerOptions
 
 
@@ -34,6 +35,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     private lateinit var mMap: GoogleMap
     private lateinit var binding: ActivityMapsBinding
     private var fusedLocationClient: FusedLocationProviderClient? = null
+    private var powerTagMarker: Marker? = null
 
     private lateinit var powerTagLocation: LatLng
 
@@ -53,8 +55,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         settingsBtn = findViewById(R.id.settingsBtn)
         backGround1 = findViewById(R.id.main)
 
-        //TODO Change later based on api call, currently based on Sydney
-        powerTagLocation = LatLng(-34.0, 151.0)
+
 
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         val mapFragment = supportFragmentManager
@@ -65,6 +66,9 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
          * On power tag button click, reset map to power tag
          */
         powerTagButton.setOnClickListener {
+            powerTagLocation = findPowerTag()
+            powerTagMarker?.remove()
+            powerTagMarker = mMap.addMarker(MarkerOptions().position(powerTagLocation).title("Power Tag"))!!
             mMap.moveCamera(CameraUpdateFactory.newLatLng(powerTagLocation))
         }
 
@@ -100,6 +104,10 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
     }
 
+    fun findPowerTag(): LatLng {
+        return LatLng(32.8812, -117.2344)
+    }
+
     /**
      * Manipulates the map once available.
      * This callback is triggered when the map is ready to be used.
@@ -112,10 +120,10 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     override fun onMapReady(googleMap: GoogleMap) {
         mMap = googleMap
 
-        // Add a marker in Sydney and move the camera
-        val sydney = LatLng(-34.0, 151.0)
-        mMap.addMarker(MarkerOptions().position(sydney).title("Marker in Sydney"))
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney))
+//        // Add a marker in Sydney and move the camera
+//        val sydney = LatLng(-34.0, 151.0)
+//        mMap.addMarker(MarkerOptions().position(sydney).title("Marker in Sydney"))
+//        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney))
 
         requestLocationPermission()
     }
