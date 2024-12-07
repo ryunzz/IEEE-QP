@@ -37,6 +37,8 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     private var fusedLocationClient: FusedLocationProviderClient? = null
     private var powerTagMarker: Marker? = null
 
+    var zoomLevel = 16.0
+
     private lateinit var powerTagLocation: LatLng
 
     val PERMISSION_REQUEST_LOCATION: Int = 1
@@ -69,7 +71,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
             powerTagLocation = findPowerTag()
             powerTagMarker?.remove()
             powerTagMarker = mMap.addMarker(MarkerOptions().position(powerTagLocation).title("Power Tag"))!!
-            mMap.moveCamera(CameraUpdateFactory.newLatLng(powerTagLocation))
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(powerTagLocation, zoomLevel.toFloat()))
         }
 
         /**
@@ -105,7 +107,8 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     }
 
     fun findPowerTag(): LatLng {
-        return LatLng(32.8812, -117.2344)
+
+        return LatLng(32.88181536282937, -117.23569069458748)
     }
 
     /**
@@ -189,7 +192,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
                     val currLocation = LatLng(latitude, longitude)
                     mMap.addMarker(MarkerOptions().position(currLocation).title("Current Location"))
-                    mMap.moveCamera(CameraUpdateFactory.newLatLng(currLocation))
+                    mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(currLocation, zoomLevel.toFloat()))
                 } else {
                     // Location data is unavailable, handle accordingly
                 }
