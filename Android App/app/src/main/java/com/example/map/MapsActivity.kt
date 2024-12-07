@@ -81,12 +81,18 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
             getCurrentLocation()
         }
 
+        /**
+         * Open settings tab
+         */
         settingsBtn.setOnClickListener {
             val intent = Intent(this, SettingsActivity::class.java)
             intent.putExtra("Dark", dark)
             startActivity(intent)
         }
 
+        /**
+         * Dark mode code
+         */
         val intent1 = intent
         val bool1 = intent.getBooleanExtra("DarkMode", false)
         if (bool1) {
@@ -122,12 +128,6 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
      */
     override fun onMapReady(googleMap: GoogleMap) {
         mMap = googleMap
-
-//        // Add a marker in Sydney and move the camera
-//        val sydney = LatLng(-34.0, 151.0)
-//        mMap.addMarker(MarkerOptions().position(sydney).title("Marker in Sydney"))
-//        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney))
-
         requestLocationPermission()
     }
 
@@ -170,13 +170,6 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
                 Manifest.permission.ACCESS_COARSE_LOCATION
             ) != PackageManager.PERMISSION_GRANTED
         ) {
-            // TODO: Consider calling
-            //    ActivityCompat#requestPermissions
-            // here to request the missing permissions, and then overriding
-            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-            //                                          int[] grantResults)
-            // to handle the case where the user grants the permission. See the documentation
-            // for ActivityCompat#requestPermissions for more details.
             return
         }
         fusedLocationClient!!.lastLocation
@@ -193,8 +186,6 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
                     val currLocation = LatLng(latitude, longitude)
                     mMap.addMarker(MarkerOptions().position(currLocation).title("Current Location"))
                     mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(currLocation, zoomLevel.toFloat()))
-                } else {
-                    // Location data is unavailable, handle accordingly
                 }
             }
             .addOnFailureListener(this) {
