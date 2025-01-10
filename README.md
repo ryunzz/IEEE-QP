@@ -25,11 +25,11 @@ Here are some quick links to some of the resources we developed while creating o
 
 ⚒️ • [CAD Prototype](https://cad.onshape.com/documents/414c4d8f43532bc1522ffbfb/w/5fb8d6774189fcfafbb3d3dd/e/008da2b45a0e4b36c7adde66?renderMode=0&uiState=671de227b8d1f63fc293a736) (WIP)
 
-📐 • [Figma]()
+📐 • [Figma](https://www.figma.com/design/xHWXMFgnI0LNjJG5GyGXPK/Power-Tag-App?node-id=0-1)
 
-📢 • [Pitchdeck]() 
+📢 • [Pitchdeck](https://docs.google.com/presentation/d/1R1kPwp6bea-cZtiw3fCqTe-CjcfZVofYU63vwoQppgA/edit?usp=sharing) 
 
-📕 • [Documentation]() 
+📕 • [Documentation](https://docs.google.com/document/d/1vHXY2cktga8L-Rg751vY4500SpIR977lDCjheDakogU/edit?usp=sharing) 
 
 # Materials
 If you're interested in what materials we used to build Power Tag, here's a list of resources from where we purchased our parts!
