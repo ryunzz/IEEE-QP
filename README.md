@@ -1,38 +1,35 @@
-This is a project that is currently in development. If you're interested in following along, we will be documenting our process on https://www.youtube.com/@ryun-zz !
+This project was awarded #1 Best Overall @ IEEE FA24.
 
 ---
 
 # Hello we are, IEEE QP Fall 2024 Team 1!
-Ryan Ni, Ryan Estanislao, Bryan Fu, Josue Galindo, Arturo Zazueta, Phillip Mai, May Hong
+Ryan Ni, Ryan Estanislao, Bryan Fu, Phillip Mai, Josue Galindo
 
 # Introduction
 Our project, "Power Tag" aims to create a versatile, chargeable power bank for mobile devices equipped with a GPS tracking feature via GSM communication. Users can monitor the location of their device & luggage through a mobile app we developed for this project, utilizing various API calls from and to Google Maps API & Blynk API. We decided to go through with the GSM communication route as it allows for connecting to the internet without the need for a physical Wi-Fi router/connection (WiFi is not garunteed to the device if it's lost)
 
 # What it does
-Power Tag uses GSM communication to send GPS coordinates through a SIM 800L GSM module to connect to the internet without needing a Wifi connection accessable via our mobile app we developed allowing for a broader range of security. Power Tag has 2 ways to charge its power bank feature; Solar Panels and USB Type C connector. This Power bank allows for 20W of fast charging for mobile devices.
+Power Tag uses GSM communication to send GPS coordinates through a SIM 800L GSM module to connect to the internet without needing a Wifi connection accessable via our mobile app we developed allowing for a broader range of security.This Power bank allows for 20W of fast charging for mobile devices.
 
 # How we built it
 We programmed the Arduino UNO to send the GPS coordinates from the SIM 800L GSM module to our mobile application via Blynk API and display the location of the users' Power Tag on an embedded map via Google Maps API. Designed and soldered hardware components together to complete a circuit to allow for Power Tag's charging feature.
 
 # Challenges we ran into
-One of the chelleges we faced was designing the circuitry for Power Tag to allow for both Solar charging and general charging via a USB Type C Connector. With some more research we decided to change what charging board we would use in order to allow for both Type C and Micro USB inputs and 2 5V 2.4A USB Ouputs.
-
-# Accomplishments that we're proud of
-(will fill in after project is done)
+One of the chelleges we faced was initializing the modem for the GSM Module as the Module only accepted 3.3V when our power source was 3.7 LiPo Batteries. We ended up designing a voltage divider in order to allow for the GSM Module to communicate and connect with our Kotlin mobile app.
 
 # What's next for Power Tag
-(will fill in once we discuss more features)
+We hope that in the future we are able to possible connect to Apple's built in UWB Chip (Ultra Wide Bands) for Find My compatibility and improved location services
 
 # Overview
 Here are some quick links to some of the resources we developed while creating our project:
 
 ⚒️ • [CAD Prototype](https://cad.onshape.com/documents/414c4d8f43532bc1522ffbfb/w/5fb8d6774189fcfafbb3d3dd/e/008da2b45a0e4b36c7adde66?renderMode=0&uiState=671de227b8d1f63fc293a736) (WIP)
 
-📐 • Figma? (coming soon) We'll see LOL
+📐 • [Figma]()
 
-📢 • Pitchdeck (coming soon) Will be created closer to dead line
+📢 • [Pitchdeck]() 
 
-📕 • Documentation (coming soon) Ryan Ni's working on it ;-;
+📕 • [Documentation]() 
 
 # Materials
 If you're interested in what materials we used to build Power Tag, here's a list of resources from where we purchased our parts!
