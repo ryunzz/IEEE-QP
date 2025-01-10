@@ -1,4 +1,4 @@
-This project was awarded #1 Best Overall @ IEEE FA24.
+This project was awarded #1 Best Overall @ [IEEE QP FA24](https://devpost.com/software/power-tag).
 
 ---
 
@@ -23,7 +23,7 @@ We hope that in the future we are able to possible connect to Apple's built in U
 # Overview
 Here are some quick links to some of the resources we developed while creating our project:
 
-⚒️ • [CAD Prototype](https://cad.onshape.com/documents/414c4d8f43532bc1522ffbfb/w/5fb8d6774189fcfafbb3d3dd/e/008da2b45a0e4b36c7adde66?renderMode=0&uiState=671de227b8d1f63fc293a736) (WIP)
+⚒️ • [CAD Prototype](https://cad.onshape.com/documents/414c4d8f43532bc1522ffbfb/w/5fb8d6774189fcfafbb3d3dd/e/008da2b45a0e4b36c7adde66?renderMode=0&uiState=671de227b8d1f63fc293a736)
 
 📐 • [Figma](https://www.figma.com/design/xHWXMFgnI0LNjJG5GyGXPK/Power-Tag-App?node-id=0-1)
 
